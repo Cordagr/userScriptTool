@@ -53,3 +53,21 @@
     const ipAddressToCheck = '123.456.789.123';
     checkIPReputation(ipAddressToCheck);
 })();
+
+ // Add toolbar button
+    const toolbarButton = document.createElement('button');
+    toolbarButton.innerHTML = 'IP Reputation';
+    toolbarButton.style.position = 'fixed';
+    toolbarButton.style.top = '20px';
+    toolbarButton.style.right = '20px';
+    toolbarButton.style.zIndex = '9999';
+    toolbarButton.addEventListener('click', function() {
+        const ipAddress = prompt('Enter IP address:');
+        if (ipAddress) {
+            checkIPReputation(ipAddress);
+        }
+    });
+    document.body.appendChild(toolbarButton);
+})();
+
+
