@@ -19,14 +19,13 @@ Replace `YOUR_API_KEY` in the script with your actual AbuseIPDB API key.
 
 ```javascript
 const API_KEY = 'YOUR_API_KEY';
-Example
-Example usage of the script:
 ```
 
 # Usage
-JavaScript
+``` javascript
 const ipAddressToCheck = '123.456.789.123';
 checkIPReputation(ipAddressToCheck);
+```
 
 # Contributing 
 If you would like to contribute to this project, please fork the repository and create a pull request with your changes.
